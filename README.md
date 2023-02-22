@@ -47,7 +47,7 @@ npm test
 
 ## Application description
 
-This application was build by using Tailwind and UI Components Built from scratch using sass. In order to develop an insolate component from scratch (Following atomic design and BEM for styles), test it and how the props work, I used [Storybook library](https://storybook.js.org/)
+This application was build by using Tailwind and UI Components built from scratch using Sass. In order to develop an insolate component (Following atomic design and BEM for styles), test it and how the props work, I used [Storybook library](https://storybook.js.org/)
 
 Components Built from scratch
 
@@ -65,9 +65,9 @@ Components using tailwind css
 - User's details was built by Tailwind css
 - General Layout
 
-The folder structure is simple, components folder contains simple components and views contains the pages to show the application, utils for helpers functions.
+The folder structure is easy, components folder contains simple components and views contains the pages to show the application, utils for helpers functions.
 
-By using react-query and axios to handle the API request, in order to avoid multiple request while user is typing in the search, I developed a debauce function.
+By using react-query and axios to handle the API request, in order to avoid multiple request while user is typing in the search, I developed a debaunce function.
 
 In order to handle the router I used React Router Dom, passing as parameter in the url the username to request user details
 
