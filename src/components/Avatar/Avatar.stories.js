@@ -1,9 +1,12 @@
+import { withRouter } from "storybook-addon-react-router-v6";
+
 import React from "react";
 
 import Avatar from "./";
 
 export default {
-  title: "Organisms/Avatar",
+  title: "Molecules/Avatar",
+  decorators: [withRouter],
   component: Avatar,
 };
 

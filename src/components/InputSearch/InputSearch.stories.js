@@ -1,9 +1,12 @@
+import { withRouter } from "storybook-addon-react-router-v6";
+
 import React from "react";
 
 import InputSearch from "./";
 
 export default {
   title: "Atoms/InputSearch",
+  decorators: [withRouter],
   component: InputSearch,
 };
 

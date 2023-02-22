@@ -1,9 +1,11 @@
 import React from "react";
+import { withRouter } from "storybook-addon-react-router-v6";
 
 import Header from "./";
 
 export default {
-  title: "Organisms/Header",
+  title: "Molecules/Header",
+  decorators: [withRouter],
   component: Header,
 };
 

@@ -1,4 +1,3 @@
-import "./App.css";
 import Users from "./views/Users";
 import CardDetail from "./views/CardDetail";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
