@@ -1,0 +1,30 @@
+@use '../constants';
+.input--container {
+    position: relative;
+    font-size: 12px;
+    &-imgSearch{
+        width: 15px;
+        position: absolute;
+        opacity: 0.5;
+        top: 7px;
+        left: 5px;
+    }
+    &-inputSearch{
+        padding: 5px;
+        padding-left: 25px;
+        width: 100%;
+        border:  1px solid constants.$light-grey; 
+        border-radius: 3px;
+        &::-webkit-search-cancel-button{
+            -webkit-appearance: none;
+            content: URL("https://img.icons8.com/material/24/null/cancel--v1.png");
+            cursor: pointer;
+            opacity: 0.2;
+            width: 15px;
+        }
+        &:focus-visible{
+            border:  1px solid constants.$aqua; 
+            outline: none;
+        }
+    }
+}
