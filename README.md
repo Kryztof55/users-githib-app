@@ -2,6 +2,8 @@
 
 # Add comments of how this app was crete
 
+# Don't forget add how this app was built
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
