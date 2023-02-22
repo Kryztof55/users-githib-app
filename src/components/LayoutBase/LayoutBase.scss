@@ -1,0 +1,19 @@
+.custom{
+    &--container {
+        width: 100%;
+        padding: {
+            top: 3rem;
+            right: 2rem;
+            bottom: 3rem;
+            left: 2rem
+        };
+    }
+}
+
+@media (min-width: 1024px) {
+    .custom{
+        &--container {
+            max-width: 920px;
+        }
+    }
+}

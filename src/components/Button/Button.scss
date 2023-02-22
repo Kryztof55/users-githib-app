@@ -1,0 +1,21 @@
+@use '../constants';
+
+.button {
+    background-color: white;
+    border:  1px solid constants.$light-grey;
+    color: constants.$grey;
+    padding: {
+        top:8px;
+        right: 10px;
+        bottom: 8px;
+        left: 10px;
+    }
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    font-size: 11px;
+    &:hover {
+        box-shadow: 11px 12px 12px -18px rgba(0,0,0,0.53);
+        background-color: rgba(black, .08);
+    }
+}

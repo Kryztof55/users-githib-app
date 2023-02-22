@@ -1,0 +1,28 @@
+@use '../constants';
+
+.link {
+    text-decoration: none;
+    color: constants.$aqua;
+    transition: all 200ms ease-in-out;
+    position: relative;
+    font-size: 12px;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: rgba(constants.$aqua, .8);
+        transition: all 200ms ease-in-out;
+    }
+    &:hover{
+        color: rgba(constants.$aqua, .8);
+        &::after {
+            content: '';
+            width: 100%;
+           
+        }
+
+    }
+}

@@ -1,0 +1,38 @@
+@use '../constants';
+.avatar-card {
+    width: 100%;
+    padding: 20px;
+    border:  1px solid constants.$light-grey; 
+    border-radius: 8px;  
+    position: relative;
+    transition: all 250ms ease-in-out;
+    &--image {
+        border-radius: 100%;
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        align-items: center;
+    }
+    &--name  {
+        font-family: "Roboto-Medium";
+        color: constants.$grey;
+    }
+    &--main{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &--icon{
+        width:20px;
+        height: 20px;
+    }
+    &--footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &:hover{
+        box-shadow: 11px 12px 12px -18px rgba(0,0,0,0.53);
+    }
+    
+}
