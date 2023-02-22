@@ -1,74 +1,76 @@
-# Getting Started with Create React App
+# GitHub Users Technical Test
 
-# Add comments of how this app was crete
+This application was created by create-react-app
 
-# Don't forget add how this app was built
+#### Installation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Some of the dependecies installed to build this application are:
+-tailwindcss
+-react-query
+-axios
+-react-router-dom
+-sass
 
-## Available Scripts
+```sh
+npm install
+```
 
-In the project directory, you can run:
+#### Start local server
 
-### `npm start`
+```sh
+npm run start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Start Storybook
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```sh
+npm run storybook
+```
 
-### `npm test`
+#### Creating an optimized production build
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+npm run build
+```
 
-### `npm run build`
+#### You may serve it with a static server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+serve -s build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Run Unit tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm test
+```
 
-### `npm run eject`
+## Application description
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This application was build by using Tailwind and UI Components Built from scratch using sass. In order to develop an insolate component from scratch (Following atomic design and BEM for styles), test it and how the props work, I used [Storybook library](https://storybook.js.org/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Components Built from scratch
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Atoms
+  -- Button
+  -- Input Search
+  -- Link
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Molecules
+  --Avatar
+  --Header
 
-## Learn More
+Components using tailwind css
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- User's details was built by Tailwind css
+- General Layout
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The folder structure is simple, components folder contains simple components and views contains the pages to show the application, utils for helpers functions.
 
-### Code Splitting
+By using react-query and axios to handle the API request, in order to avoid multiple request while user is typing in the search, I developed a debauce function.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In order to handle the router I used React Router Dom, passing as parameter in the url the username to request user details
 
-### Analyzing the Bundle Size
+I developed just a single test for Avatar component just it render correctly
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+// Created by Christopher Farango c.farango.dg@gmail.com

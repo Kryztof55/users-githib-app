@@ -1,9 +1,12 @@
+import { withRouter } from "storybook-addon-react-router-v6";
+
 import React from "react";
 
 import Link from "./";
 
 export default {
   title: "Atoms/Link",
+  decorators: [withRouter],
   component: Link,
 };
 
